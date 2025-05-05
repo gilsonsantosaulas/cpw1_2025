@@ -1,0 +1,29 @@
+h1 {
+    color: #003366;
+    font-size: 28px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+a {
+    color: purple;
+    margin: 10px;
+    display: inline-block;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+ol {
+    background-color: #f0f0f0;
+    padding: 15px;
+}

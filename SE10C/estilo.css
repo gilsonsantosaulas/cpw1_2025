@@ -1,0 +1,18 @@
+table {
+    background-color: #d3d3d3;
+    margin: 30px;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid black;
+    height: 40px;
+}
+
+a {
+    color: purple;
+}
+
+h1 {
+    color: black;
+}

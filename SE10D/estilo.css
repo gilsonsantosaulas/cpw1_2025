@@ -1,0 +1,28 @@
+body {
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #003366;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+}
+
+a {
+    color: green;
+    margin: 10px;
+    display: inline-block;
+}
+
+table {
+    border: 1px solid black;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid black;
+    height: 30px;
+}
