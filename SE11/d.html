@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Precedência de Seletores</title>
+  <style>
+    .box {
+      background-color: gray;
+    }
+
+    .destaque {
+      background-color: blue;
+    }
+
+    #unico {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">Caixa 1: Apenas classe "box"</div>
+
+  <div class="box destaque">Caixa 2: Classe "box" e "destaque"</div>
+
+  <div class="box destaque" id="unico">Caixa 3: Classe "box", "destaque" e id "unico"</div>
+
+</body>
+</html>
