@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos de Pseudoclasses em CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h2 {
+            margin-top: 50px;
+            color: #333;
+        }
+       
+        /* classe botao-mouse com pseudoclasse :hover (ao colocar o mouse em cima) */
+        .botao-mouse:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* tag input com pseudoclasse :focus (ao entrar em foco no input) */
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        /* :visited e :link */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+        
+        /* classe primeiro-filho apenas para tag ul e  
+        :first-child apenas para tag li (primeiro filho)*/
+        ul.primeiro-filho li:first-child {
+            background-color: yellow;
+        }
+
+        /* classe ultimo-filho apenas para tag ul e  
+        :last-child apenas para tag li (ultimo filho)*/
+        ul.ultimo-filho li:last-child {
+            background-color: lightgreen;
+        }
+
+        /* classe colorir lista apenas para tag ul e 
+        pseudoclasse :nth-child(odd) apenas para tag li (filho impar) */
+        ul.colorir-lista li:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        /* classe colorir lista apenas para tag ul e 
+        pseudoclasse :nth-child(even) apenas para tag li (filho par) */
+        ul.colorir-lista li:nth-child(even) {
+            background-color: #d9edf7;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Exemplos de Pseudoclasses em CSS</h1>
+
+    <h2>:hover</h2>
+    <button class="botao-mouse">Passe o mouse aqui</button>
+
+    <h2>:focus</h2>
+    <input type="text" placeholder="Clique aqui para ver o foco">
+
+    <h2>:link e :visited</h2>
+    <p>
+        <a href="https://www.google.com" target="_blank">Link não visitado (Google)</a><br>
+        <a href="https://www.uol.com.br" target="_blank">Link visitado (mude a URL após testar)</a>
+    </p>
+
+    <h2>:first-child</h2>
+    <ul class="primeiro-filho">
+        <li>Primeiro item (destacado)</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>:last-child</h2>
+    <ul class="ultimo-filho">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Último item (destacado)</li>
+    </ul>
+
+    <h2>:nth-child(odd) e :nth-child(even)</h2>
+    <ul class="colorir-lista">
+        <li>Item 1 (ímpar)</li>
+        <li>Item 2 (par)</li>
+        <li>Item 3 (ímpar)</li>
+        <li>Item 4 (par)</li>
+        <li>Item 5 (ímpar)</li>
+    </ul>
+
+</body>
+</html>
