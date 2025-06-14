@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Demonstration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .container-display-flex {
+      display: flex;
+      gap: 10px;
+      column-gap: ;
+      border: 2px solid #333;
+      padding: 10px;
+      margin-bottom: 30px;
+      background: white;
+    }
+
+    .item {
+      width: 60px;
+      height: 60px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flex-direction-row {
+      flex-direction: row;
+    }
+
+    .flex-direction-row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .flex-direction-column {
+      flex-direction: column;
+    }
+
+    .flex-direction-column-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .justify-content-start {
+      justify-content: flex-start;
+    }
+
+    .justify-content-center {
+      justify-content: center;
+    }
+
+    .justify-content-end {
+      justify-content: flex-end;
+    }
+
+    .justify-content-between {
+      justify-content: space-between;
+    }
+
+    .justify-content-around {
+      justify-content: space-around;
+    }
+
+    .justify-content-evenly {
+      justify-content: space-evenly;
+    }
+
+    .align-items-start {
+      align-items: flex-start;
+      height: 150px;
+    }
+
+    .align-items-center {
+      align-items: center;
+      height: 150px;
+    }
+
+    .align-items-end {
+      align-items: flex-end;
+      height: 150px;
+    }
+
+    .wrap-nowrap {
+      flex-wrap: nowrap;
+      width: 300px;
+    }
+
+    .flex-wrap-wrap {
+      flex-wrap: wrap;
+      width: 300px;
+    }
+
+    .flex-wrap-wrap-reverse {
+      flex-wrap: wrap-reverse;
+      width: 300px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h2>1. display: flex</h2>
+  <div class="container-display-flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>O display: flex é uma propriedade do CSS usada para transformar um elemento contêiner em um flex container
+    (contêiner flexível). Isso permite que os itens filhos desse contêiner sejam organizados de forma mais eficiente e
+    flexível em uma única dimensão: linha (horizontal) ou coluna (vertical).</small>
+
+  <h2>2.1 display: flex + flex-direction: row</h2>
+  <div class="container-display-flex flex-direction-row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>A propriedade flex-direction: row; é usada em um contêiner com display: flex para organizar os itens filhos na
+    horizontal, da esquerda para a direita (sentido padrão da escrita ocidental).</small>
+
+  <h2>2.2 display: flex + flex-direction: row-reverse</h2>
+  <div class="container-display-flex flex-direction-row-reverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Organiza os itens horizontalmente, da direita para a esquerda.</small>
+
+  <h2>2.3 display: flex + flex-direction: column</h2>
+  <div class="container-display-flex flex-direction-column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Organiza os itens verticalmente, de cima para baixo.</small>
+
+  <h2>2.4 display: flex + flex-direction: column-reverse</h2>
+    <div class="container-display-flex flex-direction-column-reverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Organiza os itens verticalmente, de baixo para cima.</small>
+
+  <h2>3.1 display: flex + justify-content: flex-start</h2>
+  <div class="container-display-flex justify-content-start">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Alinha os itens ao início do contêiner no eixo principal.</small>
+
+  <h2>3.2 display: flex + justify-content: center</h2>
+  <div class="container-display-flex justify-content-center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Centraliza os itens no eixo principal.</small>
+
+  <h2>3.3 display: flex + justify-content: flex-end</h2>
+  <div class="container-display-flex justify-content-end">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Alinha os itens ao final do contêiner no eixo principal.</small>
+
+  <h2>3.4 display: flex + justify-content: space-between</h2>
+  <div class="container-display-flex justify-content-between">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Distribui os itens com o maior espaço possível entre eles.</small>
+
+  <h2>3.5 display: flex + justify-content: space-around</h2>
+  <div class="container-display-flex justify-content-around">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Distribui os itens com espaços iguais ao redor de cada um.</small>
+
+  <h2>3.6 display: flex + justify-content: space-evenly</h2>
+  <div class="container-display-flex justify-content-evenly">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Distribui os itens com espaços iguais entre eles e nas extremidades.</small>
+
+  <h2>4.1 display: flex + align-items: flex-start</h2>
+  <div class="container-display-flex align-items-start">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Alinha os itens ao topo (início do eixo cruzado).</small>
+
+  <h2>4.2 display: flex + align-items: center</h2>
+  <p>.align-items-center { align-items: center; }</p>
+  <div class="container-display-flex align-items-center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Centraliza os itens verticalmente (eixo cruzado).</small>
+
+  <h2>4.3 display: flex + align-items: flex-end</h2>
+  <div class="container-display-flex align-items-end">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <small>Alinha os itens ao final do eixo cruzado (parte inferior).</small>
+
+
+  <h2>5.1 display: flex + flex-wrap: nowrap</h2>
+  <div class="container-display-flex wrap-nowrap">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+  <small>Todos os itens permanecem em uma única linha (sem quebra).</small>
+
+  <h2>5.2 display: flex + flex-wrap: wrap</h2>
+  <div class="container-display-flex flex-wrap-wrap">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+  <small>Os itens quebram para a linha abaixo se não couberem.</small>
+
+  <h2>5.3 display: flex + flex-wrap: wrap-reverse</h2>
+  <div class="container-display-flex flex-wrap-wrap-reverse">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+  <small>Os itens quebram para uma nova linha acima (inversão vertical).</small>
+
+</body>
+
+</html>
