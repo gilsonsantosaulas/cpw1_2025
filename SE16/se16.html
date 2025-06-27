@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>SE16</title>
+  <style>
+    
+    .div-centro {
+      background-color: aliceblue; /*cor de fundo*/
+      padding: 10px; /*margem interna*/
+      text-align: center; /*alinhamento do texto*/
+    }
+
+    .link-menu {
+      margin: 0 15px; /*margem externa*/
+      padding: 10px 15px;
+      color: black; /*cor da letra*/
+      text-decoration: none; /*sem sublinhado*/
+      font-weight: bold; /*negrito*/
+    }
+
+    .link-menu:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    form {
+      width: 300px; /*largura*/
+      margin: 20px auto;
+      padding: 20px; 
+      border: 1px solid #ccc; /*borda*/
+      box-sizing: border-box; /*controle da largura*/
+    }
+
+    .campo {
+      width: 100%; /*largura ocupa 100% do elemento em que está inserido*/
+      padding: 10px;
+      margin-bottom: 15px; /*margem inferior*/
+      border: 1px solid #ccc;
+      box-sizing: border-box; 
+    }
+
+    .campo:focus {
+      outline: none; /*sem linha... necessário para a borda vermelha aparecer com 2px*/
+      border: 2px solid red; 
+    }
+
+
+    .link-wiki {
+      margin: 20px;
+      text-decoration: none;
+      color: blue;
+      padding: 5px 10px;
+    }
+
+    .link-wiki:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .link-wiki:visited {
+      color: gray;
+    }
+
+    
+    
+
+  </style>
+</head>
+<body>
+
+  <div class="div-centro">
+    <a href="#" class="link-menu">Início</a>
+    <a href="#" class="link-menu">Sobre</a>
+    <a href="#" class="link-menu">Contato</a>
+  </div>
+
+  <form>
+    <label for="email">E-mail:</label>
+    <input id="email" class="campo">
+
+    <label for="senha">Senha:</label>
+    <input id="senha" class="campo">
+
+    <button type="submit">Entrar</button>
+  </form>
+
+  <div class="div-centro">
+    <a href="https://pt.wikipedia.org" target="_blank" class="link-wiki">Visite a Wikipédia</a>
+  </div>
+
+</body>
+</html>

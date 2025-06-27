@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastrar Campus</title>
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo.png" class="logo-menor" alt="Logo IFMS">
+    <h2>Sistema Acadêmico</h2>
+  </div>
+
+  <div class="menu">
+    <a href="alunos.html">Alunos</a>
+    <a href="professores.html">Professores</a>
+    <a href="cursos.html">Cursos</a>
+    <a href="campi.html">Campi</a>
+  </div>
+
+  <div class="container">
+    <form>
+      <label>Nome do Campus:</label>
+      <input type="text">
+
+      <label>Telefone:</label>
+      <input type="text">
+
+      <label>Endereço:</label>
+      <input type="text">
+
+      <label>Cidade:</label>
+      <input type="text">
+
+      <label>Tipo de Sede:</label>
+      <select>
+        <option>Provisória</option>
+        <option>Construída</option>
+      </select>
+
+      <label>Tipos de Cursos:</label>
+      <div class="em-linha">
+        <input type="checkbox" name="cursos" value="tecnico">
+        <label>Técnico</label>
+
+        <input type="checkbox" name="cursos" value="graduacao">
+        <label>Graduação</label>
+
+        <input type="checkbox" name="cursos" value="especializacao">
+        <label>Especialização</label>
+
+        <input type="checkbox" name="cursos" value="mestrado">
+        <label>Mestrado</label>
+
+        <input type="checkbox" name="cursos" value="doutorado">
+        <label>Doutorado</label>
+      </div>
+
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+</body>
+
+</html>

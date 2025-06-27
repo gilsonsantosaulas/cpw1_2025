@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Cadastrar Aluno</title>
+</head>
+
+<body>
+  <div class="header">
+    <img src="logo.png" class="logo-menor" alt="Logo IFMS">
+    <h2>Sistema Acadêmico</h2>
+  </div>
+  <div class="menu">
+    <a href="alunos.html">Alunos</a>
+    <a href="professores.html">Professores</a>
+    <a href="cursos.html">Cursos</a>
+  </div>
+  <div class="container">
+    <form>
+      <label>Nome:</label>
+      <input type="text">
+      <label>CPF:</label>
+      <input type="text">
+      <label>Celular:</label>
+      <input type="text">
+      <label>Data de Nascimento:</label>
+      <input type="date">
+      <label for="">Sexo</label>
+      <div class="em-linha">
+        <input type="radio" name="sexo"> <label for="">Masculino</label>
+        <input type="radio" name="sexo"> <label for="">Feminino</label>
+      </div>
+      <label>Campus:</label>
+      <select>
+        <option>Campo Grande</option>
+        <option>Dourados</option>
+      </select>
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+/* todo o documento */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+/* apenas o cabeçalho do documento (logo e sistema acadêmico) e os links de dentro da classe header */
+.header, .header a {
+  background: #00703c;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* apenas logo maior */
+.logo {
+  height: 60px;
+}
+
+/* apenas logo menor */
+.logo-menor {
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* container onde ficará os elementos da página */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+/* todos os links */
+a {
+  color: #00703c;
+  text-decoration: none; /* sem sublinhado */
+  margin-right: 10px;
+}
+
+/* apenas menu */
+.menu {
+  background: #e6e6e6;
+  padding: 10px;
+  text-align: center;
+}
+
+/* apenas links da classe menu */
+.menu a {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* apenas input, select, text area dentros de forms */
+form input, form select, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  /* corrigir distorções na largura do select */
+}
+
+
+form label {
+  font-weight: bold;
+}
+
+
+button {
+  background-color: #00703c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%; /* 100% do container... o container esta com 800px */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+
+/* em-linha é uma classe para div que possui input radio ou checkbox e label */
+.em-linha input, label {
+    display: inline;
+    width: auto;
+}
+
+.em-linha {
+  margin-bottom: 15px;
+}
+
+.em-linha label {
+  margin-right: 10px;
+}
