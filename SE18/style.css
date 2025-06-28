@@ -1,0 +1,76 @@
+/*style.css*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.menu a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px 8px black;
+}
+
+
+
+
+/**/
+
+.depoimentos {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+
+.box-depoimento {
+  width: 220px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px 8px black;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.box-depoimento img {
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.box-depoimento h3 {
+  margin: 8px 0;
+}
+
+.box-depoimento p {
+  font-style: italic;
+  color: #555;
+}
