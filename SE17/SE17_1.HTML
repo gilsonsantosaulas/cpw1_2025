@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Vertical</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;   /* centraliza verticalmente */
+      align-items: center;       /* centraliza horizontalmente */
+      height: 100vh;             /* 100% da altura da tela */
+      background-color: #f0f0f0;
+    }
+
+    .menu a { /* link dentro de elemento com a classe menu */
+      margin: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </div>
+</body>
+</html>
