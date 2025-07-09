@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Exemplo 1fr 2fr 1fr</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 10px;
+      padding: 20px;
+      background-color: #eee;
+    }
+
+    .item {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">Coluna 1 (1fr)</div>
+    <div class="item">Coluna 2 (2fr)</div>
+    <div class="item">Coluna 3 (1fr)</div>
+  </div>
+
+</body>
+</html>
